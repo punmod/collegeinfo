@@ -1,0 +1,134 @@
+
+<div class="panel panel-default">
+  <div class="panel-heading">College Data</div>
+  <div class="panel-body">
+
+
+<form class="form-horizontal" (submit)="updateCollegedata()">
+     <div class="row">
+  <div class="col-sm-6">
+    <div class="classWithPad">
+     <div class="form-group ">
+      <label class="control-label " for="yearofestablishment">
+       Year of Establishment
+      </label>
+      <input class="form-control" [(ngModel)]="model.yoe" id="yearofestablishment" name="yearofestablishment" type="text"/>
+     </div>
+     <div class="form-group" id="div_singleormulti">
+      <label class="control-label " for="singleormulti">
+       Select one
+      </label>
+      <div class="">
+       <label class="radio-inline">
+        <input name="singleormulti" type="radio" [(ngModel)]="model.som" value="Single Faculty"/>
+        Single Faculty
+       </label>
+       <label class="radio-inline">
+        <input name="singleormulti" type="radio" [(ngModel)]="model.som" value="Multi Faculty"/>
+        Multi Faculty
+       </label>
+      </div>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="naacgrade">
+       NAAC Grade
+      </label>
+      <input class="form-control" [(ngModel)]="model.nc" id="naacgrade" name="naacgrade" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="usp">
+       Three USPs of College
+      </label>
+      <textarea class="form-control" cols="40" id="usp" [(ngModel)]="model.usp" name="usp" rows="10"></textarea>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="outstandingachievment">
+       Outstanding Achievment like NIRF Ranking, Potential Status, FIST, Star Status etc.
+      </label>
+      <textarea class="form-control" cols="40" [(ngModel)]="model.oa" id="outstandingachievment" name="outstandingachievment" rows="10"></textarea>
+     </div>
+  </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="classWithPad">
+         <div class="form-group ">
+         <label class="control-label ">
+      No. Regular faculty (Grant-in-Aid)
+      </label>
+      
+      <input class="form-control" [(ngModel)]="model.gia"  id="GIA" name="GIA" type="text"/>
+     </div>
+      <div class="form-group ">
+
+      <label class="control-label " for="ua">
+      No. Regular faculty (UnAided)
+      </label>
+      <input class="form-control" [(ngModel)]="model.ua"  id="ua" name="ua" type="text"/>
+         </div>
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+     <div class="form-group ">
+      <label class="control-label " for="name3">
+       No. of Contractual/Temporary/Adhoc Faculty
+      </label>
+      <input class="form-control"  [(ngModel)]="model.nocta" id="name3" name="name3" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="nog">
+       No. of Guest faculty/Resource Persons
+      </label>
+      <input class="form-control" [(ngModel)]="model.nog" id="nog" name="nog" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="non">
+       No. of Non-teaching staff
+      </label>
+      <input class="form-control" [(ngModel)]="model.non" id="non" name="non" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="nos">
+       Name of the states from which Students are admitted
+      </label>
+      <textarea class="form-control" cols="40" [(ngModel)]="model.nos" id="nos" name="nos" rows="10"></textarea>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="noh">
+       No. of Hostel Residents
+      </label>
+      <input class="form-control" [(ngModel)]="model.noh" id="noh" name="noh" type="text"/>
+     </div>
+     <div class="form-group ">
+      <label class="control-label " for="aoc">
+       Area of Campus
+      </label>
+      <input class="form-control" [(ngModel)]="model.aoc" id="aoc" name="aoc" type="text"/>
+     </div>
+  </div>
+  </div>
+  </div>
+      <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-8">
+      <button type="submit" class="btn btn-success">Update</button>
+
+    </div>
+   
+  </div>
+      
+    </form>   
+
+
+      
+  </div>
+   
+  </div>  
